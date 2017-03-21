@@ -1,0 +1,15 @@
+<ion-content padding center text-center>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col><img src="assets/img/logotipo-radio.png" height="100" /></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-fab center><button ion-fab *ngIf="!playing" (click)="play()"><ion-icon name="play"></ion-icon></button></ion-fab>
+        <ion-fab center><button ion-fab *ngIf="playing" (click)="pause()"><ion-icon name="pause"></ion-icon></button></ion-fab>
+      </ion-col>
+    </ion-row>  
+  </ion-grid>
+  
+</ion-content>
